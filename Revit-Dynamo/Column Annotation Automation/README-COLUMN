@@ -1,1 +1,30 @@
+1) This script automatically assign values to the "Mark" Parameter of Strcutural Columns(Concrete), which is then used as name tage for Columns. So this scripts number the Column in a sequence. 
+
+2) Refer attached "README-COLUMN-STEPS TO FOLLOW.pdf" for more clarification on use of scripts.
+
+3) Below packages should be installed in dynamo to run these scripts:
+	a) Archi-lab
+	b) archilab_Bumblebee
+	c) Clockwork
+	d) Dynamo4AMLib
+	e) GeniusLoci
+	f) Revit
+
+4) Add shared parameter file "Column_AnnotationSharedCoordinates.txt" in Revit Project.
+	a) Is Cantilever -> Add this parameter to Beams. Assign 'y' if the beam is cantilever to skip it from numbering(Before running the Script)
+	b) Is Transer Column - > Add this parameter to Column. Assign 'y' if column is tarnsfer Columns to assign them different numbering.
+
+6) Steps to follow while running scripts:
+	a) Open any floor plan whose column you need to tag.
+	b) Change view range as mentioned in "README-COLUMN-STEPS TO FOLLOW.pdf"
+	c) Run "Column1_RUN SCRIPTS ON ALL COLUMNS" on all columns of particular floor/Level.
+	d) Run "Column2_CORRECTION DONE ON COLUMNS" to apply corrections columns.
+	e) Run "Column3_DELETE MARK VALUES FOR COLUMNS" to erase assigned values to Mark Parameter.
+
+7) Run the scripts using Dynamo Player. Below are the General inputs required from user:
+	a) Suffix for Column - > Enter suffix for column as per company standards
+	b) Starting number for Columns -> Select number to start numbering from.
+	c) Suffix for Transfer Column -> Enter suffix for Transfer column as per company standards
+	d) Select Starting number for transfer Columns -> Select number to start numbering from.
+	h) Select Model Elements -> Select all elements of a particular floor (Script will filter Structural Column automatically) 
 
