@@ -142,7 +142,3 @@ Beam Annotation Automation/
 
 Dynamo visual programming · Revit automation · List and data management · Geometric sorting and classification · Shared parameters · Python in Dynamo · Structural drawing production · Building tools for non-programmer users (Dynamo Player)
 
-## Author
-
-**Your Name** — *Your role / degree*
-[LinkedIn](https://linkedin.com/in/your-profile) · [Email](mailto:you@example.com) · [Portfolio](https://your-site.com)
